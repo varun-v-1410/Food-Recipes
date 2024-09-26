@@ -1,3 +1,3 @@
 import * as Device from 'expo-device';
 
-export const nweb = ["Android","iOS"].includes(Device.osName) && Device.manufacturer !== null;
+export const nweb = ["Android","iOS","iPadOS"].includes(Device.osName != null ? Device.osName : "Web");

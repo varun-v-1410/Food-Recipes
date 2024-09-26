@@ -69,7 +69,7 @@ const Index = () => {
           );
         }} showsVerticalScrollIndicator={false}/>
       </View>
-      <FlatList showsVerticalScrollIndicator={false} data={categories} numColumns={ nweb ? 2 : 5} key={nweb ? 2 : 5} keyExtractor={(item)=>item.idCategory} renderItem={({item})=>{
+      <FlatList showsVerticalScrollIndicator={false} data={categories} numColumns={ nweb!=false ? 2 : 5} key={nweb!=false ? 2 : 5} keyExtractor={(item)=>item.idCategory} renderItem={({item})=>{
         return (
           <View style={liststyle.mealview}>
             <Image resizeMode='stretch' source={{uri: item.strCategoryThumb}} style={liststyle.mealimg}/>
